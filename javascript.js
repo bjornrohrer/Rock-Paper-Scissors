@@ -1,3 +1,5 @@
+let computerChoice;
+
 let userChoice = prompt("Rock, Paper or Scissors", "")[
   ("rock", "paper", "scissors")
 ];
