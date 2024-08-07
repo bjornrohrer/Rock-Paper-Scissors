@@ -10,7 +10,7 @@ let userChoice = prompt("Rock, Paper or Scissors", "")[
 ];
 
 function gameLogic() {
-  const 
+  const computerChoice = generateComputerChoice();
 
   if (userChoice === "rock" && computerChoice === "scissors") {
     alert("You won");
