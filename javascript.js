@@ -28,3 +28,5 @@ function gameLogic() {
     alert("draw");
   }
 }
+
+gameLogic();
