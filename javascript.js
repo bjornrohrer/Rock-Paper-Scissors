@@ -24,5 +24,7 @@ function gameLogic() {
     alert("You lost");
   } else if (userChoice === "paper" && computerChoice === "scissors") {
     alert("You lost");
+  } else {
+    alert("draw");
   }
 }
