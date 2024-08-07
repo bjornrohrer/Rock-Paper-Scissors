@@ -5,9 +5,7 @@ function generateComputerChoice() {
   return computerOptions[randomNumber];
 }
 
-const userChoice = prompt("Rock, Paper or Scissors", "")[
-  ("rock", "paper", "scissors")
-];
+const userChoice = prompt("Rock, Paper or Scissors", "").toLowerCase();
 
 function gameLogic() {
   const computerChoice = generateComputerChoice();
