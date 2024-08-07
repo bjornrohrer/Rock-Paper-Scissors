@@ -1,4 +1,9 @@
-let computerChoice;
+const computerOptions = ["rock", "paper", "scissors"];
+
+function computerChoice() {
+  const randomNumber = Math.floor(Math.random() * computerOptions.lenght);
+  return computerOptions[randomNumber];
+}
 
 let userChoice = prompt("Rock, Paper or Scissors", "")[
   ("rock", "paper", "scissors")
