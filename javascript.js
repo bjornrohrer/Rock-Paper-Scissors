@@ -1,6 +1,6 @@
 const computerOptions = ["rock", "paper", "scissors"];
 
-function computerChoice() {
+function generateComputerChoice() {
   const randomNumber = Math.floor(Math.random() * computerOptions.lenght);
   return computerOptions[randomNumber];
 }
@@ -10,6 +10,8 @@ let userChoice = prompt("Rock, Paper or Scissors", "")[
 ];
 
 function gameLogic() {
+  const 
+
   if (userChoice === "rock" && computerChoice === "scissors") {
     alert("You won");
   } else if (userChoice === "paper" && computerChoice === "rock") {
