@@ -1,7 +1,7 @@
 const computerOptions = ["rock", "paper", "scissors"];
 
 function generateComputerChoice() {
-  const randomNumber = Math.floor(Math.random() * computerOptions.lenght);
+  const randomNumber = Math.floor(Math.random() * computerOptions.length);
   return computerOptions[randomNumber];
 }
 
