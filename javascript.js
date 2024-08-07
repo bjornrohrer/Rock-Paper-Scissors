@@ -5,7 +5,7 @@ function generateComputerChoice() {
   return computerOptions[randomNumber];
 }
 
-let userChoice = prompt("Rock, Paper or Scissors", "")[
+const userChoice = prompt("Rock, Paper or Scissors", "")[
   ("rock", "paper", "scissors")
 ];
 
