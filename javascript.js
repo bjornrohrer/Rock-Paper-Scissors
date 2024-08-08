@@ -25,6 +25,25 @@ function gameLogic() {
   } else {
     alert("draw");
   }
+
+  scoreTracker();
+}
+
+function scoreTracker() {
+  let userScore = 0;
+  let computerScore = 0;
+
+  if (
+    (userChoice === "rock" && computerChoice === "scissors") ||
+    (userChoice === "paper" && computerChoice === "rock") ||
+    (userChoice === " scissors" && computerChoice === "paper")
+  ) {
+    userScore++;
+  } else {
+    computerScore++;
+  }
+
+  console.log(`Score :You ${userScore} - ${computerScore} Computer`);
 }
 
 gameLogic();
