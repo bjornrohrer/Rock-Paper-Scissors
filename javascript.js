@@ -38,7 +38,7 @@ function scoreTracker() {
   if (
     (userChoice === "rock" && computerChoice === "scissors") ||
     (userChoice === "paper" && computerChoice === "rock") ||
-    (userChoice === " scissors" && computerChoice === "paper")
+    (userChoice === "scissors" && computerChoice === "paper")
   ) {
     userScore++;
   } else {
