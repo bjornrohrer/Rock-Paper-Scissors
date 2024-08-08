@@ -49,3 +49,7 @@ function scoreTracker() {
 }
 
 gameLogic();
+gameLogic();
+gameLogic();
+gameLogic();
+gameLogic();
