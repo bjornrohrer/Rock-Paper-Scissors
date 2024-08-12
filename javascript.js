@@ -6,12 +6,7 @@ function generateComputerChoice() {
 }
 
 function gameLogic() {
-  const userChoice = prompt("Rock, Paper or Scissors", "").toLowerCase();
-
   const computerChoice = generateComputerChoice();
-
-  let userScore = 0;
-  let computerScore = 0;
 
   if (userChoice === "rock" && computerChoice === "scissors") {
     alert("You won");
@@ -37,9 +32,3 @@ function gameLogic() {
 
   console.log(`Score :You ${userScore} - ${computerScore} Computer`);
 }
-
-gameLogic();
-gameLogic();
-gameLogic();
-gameLogic();
-gameLogic();
