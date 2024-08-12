@@ -10,21 +10,22 @@ const buttonPaper = document.querySelector("#paper");
 const buttonScissors = document.querySelector("#scissors");
 
 buttonRock.addEventListener("click", () => {
-  gameLogic();
+  gameLogic("rock");
 });
 
 buttonPaper.addEventListener("click", () => {
-  gameLogic();
+  gameLogic("paper");
 });
 
 buttonScissors.addEventListener("click", () => {
-  gameLogic();
+  gameLogic("scissors");
 });
 
 function gameLogic() {
   const userChoice = ["rock", "paper", "scissors"];
   const computerChoice = generateComputerChoice();
-  let result = "";
+  let result = document.querySelector("#result");
+  result = "";
 
   if (userChoice === "rock" && computerChoice === "scissors") {
     result = "You win";
@@ -38,3 +39,5 @@ function gameLogic() {
     result = "Computer wins";
   }
 }
+
+gameLogic();
