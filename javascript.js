@@ -5,6 +5,22 @@ function generateComputerChoice() {
   return computerOptions[randomNumber];
 }
 
+const buttonRock = document.querySelector("#rock");
+const buttonPaper = document.querySelector("#paper");
+const buttonScissors = document.querySelector("#scissors");
+
+buttonRock.addEventListener("click", () => {
+  playGame();
+});
+
+buttonPaper.addEventListener("click", () => {
+  playGame();
+});
+
+buttonScissors.addEventListener("click", () => {
+  playGame();
+});
+
 function gameLogic() {
   const computerChoice = generateComputerChoice();
 
