@@ -29,6 +29,4 @@ function gameLogic() {
   } else {
     alert("draw");
   }
-
-  console.log(`Score :You ${userScore} - ${computerScore} Computer`);
 }
