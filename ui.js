@@ -5,11 +5,11 @@ function generateComputerChoice() {
   return computerOptions[randomNumber];
 }
 
-const buttonRock = document.querySelector(".rock");
-const buttonPaper = document.querySelector(".paper");
-const buttonScissors = document.querySelector(".scissors");
-
-function userChoice() {}
+function userChoice() {
+  const buttonRock = document.querySelector(".rock");
+  const buttonPaper = document.querySelector(".paper");
+  const buttonScissors = document.querySelector(".scissors");
+}
 
 function gameLogic() {
   const userChoice = prompt("Rock, Paper or Scissors", "").toLowerCase();
