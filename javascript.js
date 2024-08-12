@@ -21,28 +21,20 @@ buttonScissors.addEventListener("click", () => {
   gameLogic();
 });
 
-function gameLogic() {
+function gameLogic(userChoice) {
+  const choices = ["rock", "paper", "scissors"];
   const computerChoice = generateComputerChoice();
+  let result = "";
 
   if (userChoice === "rock" && computerChoice === "scissors") {
-    alert("You won");
-    userScore++;
+    result = "You win";
   } else if (userChoice === "paper" && computerChoice === "rock") {
-    alert("You won");
-    userScore++;
+    result = "You Win";
   } else if (userChoice === "scissors" && computerChoice === "paper") {
-    alert("You won");
-    userScore++;
-  } else if (userChoice === "scissors" && computerChoice === "rock") {
-    alert("You lost");
-    computerScore++;
-  } else if (userChoice === "rock" && computerChoice === "paper") {
-    alert("You lost");
-    computerScore++;
-  } else if (userChoice === "paper" && computerChoice === "scissors") {
-    alert("You lost");
-    computerScore++;
+    result = "You win";
+  } else if (userChoice === computerChoice) {
+    result = "It's a tie";
   } else {
-    alert("draw");
+    result = "Computer wins";
   }
 }
