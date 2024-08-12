@@ -21,8 +21,8 @@ buttonScissors.addEventListener("click", () => {
   gameLogic();
 });
 
-function gameLogic(userChoice) {
-  const choices = ["rock", "paper", "scissors"];
+function gameLogic() {
+  const userChoice = ["rock", "paper", "scissors"];
   const computerChoice = generateComputerChoice();
   let result = "";
 

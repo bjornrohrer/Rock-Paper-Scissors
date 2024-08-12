@@ -10,9 +10,7 @@ buttonPaper.addEventListener("click", () => {
   playGame();
 });
 
-buttonScissors.addEventListener("click", () => {
-  playGame();
-});
+buttonScissors.addEventListener();
 
 function playGame(userChoice) {
   const choices = ["rock", "paper", "scissors"];
