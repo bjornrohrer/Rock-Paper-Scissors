@@ -10,15 +10,15 @@ const buttonPaper = document.querySelector("#paper");
 const buttonScissors = document.querySelector("#scissors");
 
 buttonRock.addEventListener("click", () => {
-  playGame();
+  gameLogic();
 });
 
 buttonPaper.addEventListener("click", () => {
-  playGame();
+  gameLogic();
 });
 
 buttonScissors.addEventListener("click", () => {
-  playGame();
+  gameLogic();
 });
 
 function gameLogic() {
