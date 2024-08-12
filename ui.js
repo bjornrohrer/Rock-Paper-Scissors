@@ -5,7 +5,9 @@ function generateComputerChoice() {
   return computerOptions[randomNumber];
 }
 
-const buttonRock = document.querySelector("Rock");
+const buttonRock = document.querySelector(".rock");
+const buttonPaper = document.querySelector(".paper");
+const buttonScissors = document.querySelector(".scissors");
 
 function userChoice() {}
 
