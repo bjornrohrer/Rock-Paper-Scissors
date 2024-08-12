@@ -21,23 +21,19 @@ buttonScissors.addEventListener("click", () => {
   gameLogic("scissors");
 });
 
-function gameLogic() {
-  const userChoice = ["rock", "paper", "scissors"];
+function gameLogic(userChoice) {
   const computerChoice = generateComputerChoice();
   let result = document.querySelector("#result");
-  result = "";
 
   if (userChoice === "rock" && computerChoice === "scissors") {
-    result = "You win";
+    result.textContent = "You win";
   } else if (userChoice === "paper" && computerChoice === "rock") {
-    result = "You Win";
+    result.textContent = "You win";
   } else if (userChoice === "scissors" && computerChoice === "paper") {
-    result = "You win";
+    result.textContent = "You win";
   } else if (userChoice === computerChoice) {
-    result = "It's a tie";
+    result.textContent = "It's a tie";
   } else {
-    result = "Computer wins";
+    result.textContent = "Computer wins";
   }
 }
-
-gameLogic();
