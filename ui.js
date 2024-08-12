@@ -15,5 +15,5 @@ function playGame(userChoice) {
     result = `You lose! ${computerChoice} beats ${userChoice}.`;
   }
 
-  document.getElementById("result").innerText = result;
+  document.querySelector("#result").innerText = result;
 }
